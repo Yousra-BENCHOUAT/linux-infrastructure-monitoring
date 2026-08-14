@@ -58,3 +58,61 @@ CPU load
 Zabbix Agent availability
 Zabbix Agent connectivity
 System information
+
+## 🚨 Triggers & Alerts
+
+Custom monitoring rules were configured to detect infrastructure problems.
+
+### Example:
+
+CPU utilization > 80%
+        ↓
+Zabbix Trigger
+        ↓
+PROBLEM
+        ↓
+CPU returns to normal
+        ↓
+OK
+
+Zabbix Agent availability was also tested by stopping the agent and verifying that Zabbix detected the host as unavailable.
+
+## 📈 Zabbix Dashboard
+
+The monitoring dashboard provides an overview of the Linux production server, including:
+
+CPU utilization
+Memory utilization
+Latest monitoring data
+Active problems and alerts
+
+Screenshots are available in the screenshots/ directory.
+
+## 🔐 Administration & Security
+
+The project uses SSH for secure remote administration and server-to-server communication.
+
+Key administration tasks include:
+
+Remote server management through SSH
+SSH key-based authentication
+File transfer using SCP
+Linux users and permissions
+Service management with Systemd
+Scheduled tasks with Cron
+
+No passwords, private keys, tokens, or other secrets are stored in this repository.
+
+## 🎯 Project Objectives
+
+The main objectives of this project were to:
+
+Deploy and administer Linux servers
+Automate administrative tasks with Bash and Cron
+Implement SSH-based server communication
+Configure a backup infrastructure
+Deploy centralized monitoring with Zabbix
+Monitor Linux system resources
+Configure monitoring triggers
+Test infrastructure failure detection
+Build a professional monitoring dashboard
