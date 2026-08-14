@@ -18,23 +18,23 @@ The infrastructure is organized around three servers:
 | `linux-backup` | Linux | Backup server |
 | `zabbix-server` | Debian 12 | Monitoring server |
 
-#🛠️ Technologies & Tools
-##Operating Systems
+## 🛠️ Technologies & Tools
+### Operating Systems
 Ubuntu 22.04 LTS
 Debian 12
-##System Administration
+### System Administration
 Linux
 Bash
 Systemd
 Cron
 SSH
 SCP
-##Backup
+### Backup
 Bash backup scripts
 TAR / GZIP
 SSH / SCP
 Restore testing
-##Monitoring
+### Monitoring
 Zabbix Server
 Zabbix Agent
 Zabbix Web Interface
@@ -42,11 +42,11 @@ MariaDB
 Zabbix Dashboard
 Triggers and alerts
 
-#📊 Monitoring
+## 📊 Monitoring
 
 The linux-prod server is monitored using the Zabbix Agent.
 
-The monitoring includes:
+### The monitoring includes:
 
 CPU utilization
 Memory utilization
